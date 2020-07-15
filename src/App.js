@@ -13,9 +13,9 @@ export default class App extends React.Component {
         "Proptimus Omega": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/Transformers-Movie-Studio-Series-38-Voyager-G1-Optimus-Prime-Semi-truck-Render_1024x1024.png?v=1549582726",
       },
       catchPhrases: {
-        "Proptimus Prime": "SPORTS",
-        "Proptimus Beta": "2nd Best",
-        "Proptimus Omega": "I'm the worst"
+        "Proptimus Prime": "I am the last drilled prop - Optimus Prime",
+        "Proptimus Beta": "I am the middle drilled prop - Optimus Beta",
+        "Proptimus Omega": "I am the first drilled prop - Optimus Omega"
       },
       activeProp: ""
     }
@@ -68,7 +68,6 @@ export default class App extends React.Component {
           />
 
           <>
-            <p className="">Will this do, human?</p>
             <Proptimus activeProp={this.state.activeProp} src={this.state.proptimusPhotos[this.state.activeProp]} catchPhrase={this.state.catchPhrases[this.state.activeProp]} />
           </>
 

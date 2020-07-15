@@ -9,9 +9,10 @@ export default class ProptimusPrime extends React.Component {
   }
 
   render() {
-    console.log(this.props.catchPhrase)
+    console.log(this.props.activeProp)
     return(
       <section>
+           <p className="">There are no bigger guns</p>
         <img
           src={this.props.src}
           className="App-logo"

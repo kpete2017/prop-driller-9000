@@ -9,9 +9,10 @@ export default class ProptimusBeta extends React.Component {
   }
 
   render() {
-    console.log(this.props.catchPhrase)
+    console.log(this.props.activeProp)
     return(
       <section>
+        <p className="">Will this do, human?</p>
         <img
           src={this.props.src}
           className="App-logo"

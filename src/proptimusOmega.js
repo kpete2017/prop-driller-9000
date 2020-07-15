@@ -9,9 +9,10 @@ export default class ProptimusOmega extends React.Component {
   }
 
   render() {
-    console.log(this.props.catchPhrase)
+    console.log(this.props.activeProp)
     return(
       <section>
+        <p className="">Are you sure the situation warrents this?</p>
         <img
           src={this.props.src}
           className="App-logo"
