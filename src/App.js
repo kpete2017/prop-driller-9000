@@ -7,6 +7,11 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       callForHelp: "https://i.pinimg.com/originals/f8/7d/ec/f87dec9d6334af383a27f73e48ccf154.png",
+      callForHelpPhrases: {
+        "Proptimus Prime": "There are no bigger guns",
+        "Proptimus Beta": "Are you sure the situation warrents this?",
+        "Proptimus Omega": "Will this do, human?"
+      },
       proptimusPhotos: {
         "Proptimus Prime": "http://pngimg.com/uploads/transformers/transformers_PNG3.png",
         "Proptimus Beta": "https://library.kissclipart.com/20181004/jbw/kissclipart-alola-exeggutor-height-clipart-optimus-prime-trans-6afe73e9efab0cac.png",
@@ -68,7 +73,7 @@ export default class App extends React.Component {
           />
 
           <>
-            <Proptimus activeProp={this.state.activeProp} src={this.state.proptimusPhotos[this.state.activeProp]} catchPhrase={this.state.catchPhrases[this.state.activeProp]} />
+            <Proptimus callForHelpPhrase={this.state.callForHelpPhrases[this.state.activeProp]}activeProp={this.state.activeProp} src={this.state.proptimusPhotos[this.state.activeProp]} catchPhrase={this.state.catchPhrases[this.state.activeProp]} />
           </>
 
         </header>

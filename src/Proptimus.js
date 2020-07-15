@@ -7,15 +7,15 @@ export default function proptimus(props) {
 
     if(props.activeProp === "Proptimus Omega") {
         return(
-            <ProptimusOmega activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
+            <ProptimusOmega callForHelpPhrase={props.callForHelpPhrase} activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
         )
     } else if(props.activeProp === "Proptimus Beta") {
         return(
-            <ProptimusBeta activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
+            <ProptimusBeta callForHelpPhrase={props.callForHelpPhrase} activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
         )
     } else if(props.activeProp === "Proptimus Prime") {
         return(
-            <ProptimusPrime activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
+            <ProptimusPrime callForHelpPhrase={props.callForHelpPhrase} activeProp={props.activeProp} src={props.src} catchPhrase={props.catchPhrase}/>
         )
     } else {
         return null

@@ -12,7 +12,7 @@ export default class ProptimusPrime extends React.Component {
     console.log(this.props.activeProp)
     return(
       <section>
-           <p className="">There are no bigger guns</p>
+           <p className="">{this.props.callForHelpPhrase}</p>
         <img
           src={this.props.src}
           className="App-logo"
